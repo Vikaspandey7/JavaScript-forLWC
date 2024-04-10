@@ -1,0 +1,38 @@
+# Destructuring in JavaScript
+
+Destructuring is a syntax feature in JavaScript that enables us to efficiently extract and assign values from arrays or objects into individual variables, providing a more convenient way to work with them.
+
+## Array Destructuring
+
+```javascript
+let array1 = ["Amazon", "Google"];
+let company1 = array1[0];
+let company2 = array1[1];
+console.log(company1); // Amazon
+console.log(company2); // Google
+
+// Using array destructuring
+let [company1, company2] = array1;
+console.log(company1); // Amazon
+console.log(company2); // Google
+```
+
+## Object Destructuring (Mostly used in LWC)
+
+```javascript
+let person = {
+  Fname: 'Vaibhav',
+  age: 25,
+  country: 'India'
+};
+
+// Instead of:
+// var name = person.name;
+// var age = person.age;
+
+// Use object destructuring:
+let {Fname, age, country} = person;
+console.log(Fname); // 'Vaibhav'
+console.log(age); // 25 
+console.log(country); // India
+```
