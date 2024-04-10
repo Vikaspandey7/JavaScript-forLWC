@@ -1,0 +1,42 @@
+# String Interpolation in JavaScript
+
+- String Interpolation allows you to embed expressions in the string.
+- Template strings use back-ticks (\`\`) rather than the single or double-quotes.
+
+```javascript
+var name = 'Sales';
+var name1 = 'force';
+console.log(name + name1);  // Output: Salesforce (Concatenation)
+```
+## But if you have a bigger string, it's very tough to add plus (+) and the quotes (' ') and all other complexity that was increasing continuously.
+
+
+### For Example:
+
+```javascript
+
+let a = 2;
+let b = 3;
+var strname1 = 'The sum of ' + a + " & " + b + " is " + a + b;
+console.log(strname1); // The sum of 2 & 3 is 23.
+```
+## So, to solve this problem, we come up with string interpolation. String Interpolation says whatever you want to print 
+or whatever you want to create dynamically, just write it in the Back-ticks (``) and start writing and whenever you want 
+to embed JavaScript, use the dollar ($) and curly brackets ({ }) and write the text.
+
+###For example:
+
+```javascript
+let fname = 'Vikas';
+console.log(`My name is ${fname}`);    // Output: My name is Vikas
+
+let a = 2;
+let b = 3;
+console.log(`Sum of ${a} ${b} is ${a + b}`); // Output: Sum of 2 3 is 5
+```
+## In real-time, when we are constructing the URLs in Salesforce, you have the record IDs, so you have to construct the variables as mentioned below.
+
+```javascript
+var recordId = 9847543;
+console.log(`https://lnkd.in/dHZwWYTK`); // Output: https://lnkd.in/dTti3kye
+```
