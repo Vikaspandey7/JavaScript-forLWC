@@ -84,6 +84,4 @@ objar1[0].name = 'Hero';
 console.log(objar1); //Output {name: 'Hero'} {name: 'Rahul'}
 console.log(objar); //Output {name: 'Vikash'} {name: 'Rahul'}
 
-/*Please make sure to copy this Markdown content into your README.md file in your GitHub repository.
-Let me know if you need any further assistance or modifications!*/
 ```
