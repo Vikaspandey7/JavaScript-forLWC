@@ -58,9 +58,11 @@ ar1.push('Vikas'); // Use to add elements to the end of an array
 console.log(ar); // ['A', 'G', 'M', 'N', 'Vikas']
 console.log(ar1); // ['A', 'G', 'M', 'N', 'Vikas']
 
-// Here we can see that both Objects & arrays work as a reference. So when we are updating a value in the array (ar1) it automatically updates the value in the array (ar). That's why array (ar) is printing Vikas and array (ar1) as well as printing Vikas.
+// Here we can see that both Objects & arrays work as a reference. So when we are updating a value in the array (ar1) it automatically updates the value in the array (ar).
+That's why array (ar) is printing Vikas and array (ar1) as well as printing Vikas.
 
-// So that's the problem with the push method, when we add a new element in one array it reflects in two arrays. To avoid the above issue we can use the following
+// So that's the problem with the push method, when we add a new element in one array it reflects in two arrays.
+To avoid the above issue we can use the following
 
 var ar = ['A','G', 'M'];
 var ar1 = [...ar];
@@ -68,7 +70,9 @@ ar1.push('Vikas');
 console.log(ar); // ['A', 'G', 'M']
 console.log(ar1); // ['A', 'G', 'M',  'Vikas']
 
-// Note: Shallow copy only works at one level. For two level data structures, we can convert your object into the Stringify format first (JSON.stringify(objar)) and then convert it again into an object using "json.parse" JSON.parse(JSON.stringify(objar)) as mention below:
+// Note: Shallow copy only works at one level. For two level data structures, we can convert your object into the
+Stringify format first (JSON.stringify(objar)) and then convert it again into an object using "json.parse" JSON.parse(JSON.stringify(objar))
+as mention below:
 
 var objar = [         // Array with Objects
    {name: "Vikash"},
